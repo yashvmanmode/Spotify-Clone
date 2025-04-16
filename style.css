@@ -1,0 +1,405 @@
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  background-color: black;
+  color: white;
+  overflow: hidden;
+}
+
+.main {
+  display: flex;
+  height: 100vh;
+}
+
+/* SIDEBAR DESIGN CODE */
+
+.sidebar {
+  background-color: black;
+  width: 22rem;
+}
+
+/* sidebar navbar */
+
+.sidebar .navbar {
+  background-color: #121212;
+  height: 6.25rem;
+  border-radius: 1rem; /* 1rem = 16px */
+  margin: 0.3rem;
+  padding: 0.5rem 0.75rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.sidebar .navbar .navbar-option {
+  line-height: 2.5rem;
+  opacity: 0.7;
+  padding: 0.5rem 0.75rem;
+}
+
+.sidebar .navbar .navbar-option:hover {
+  opacity: 1;
+}
+
+.sidebar .navbar .navbar-option i {
+  font-size: 1.2rem;
+  margin-left: 1rem;
+}
+
+.sidebar .navbar .navbar-option a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-left: 1rem;
+}
+
+/* sidebar library */
+
+.sidebar .library {
+  background-color: #121212;
+  height: 48rem;
+  border-radius: 1rem;
+  margin: 0.3rem;
+  margin-top: 0.6rem;
+  padding: 0.5rem 0.75rem;
+}
+
+.sidebar .library .options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sidebar .library .options .lib-options {
+  opacity: 0.7;
+  line-height: 2.5rem;
+  padding: 0.5rem 0.75rem;
+}
+
+.library .options .lib-options img {
+  height: 1.25rem;
+  margin-left: 1rem;
+}
+
+.library .options .lib-options a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-left: 1rem;
+}
+
+.sidebar .library .options .lib-options:hover {
+  opacity: 1;
+}
+
+.options .icons {
+  display: flex;
+  font-size: 1.25rem;
+}
+
+.options .icons i {
+  opacity: 0.7;
+  margin-right: 1rem;
+}
+
+.icons i:hover {
+  opacity: 1;
+  transform: scale(1.2);
+}
+
+/* Sidebar Boxes */
+
+.library .lib-boxes .box {
+  margin: 0.5rem;
+  padding: 1rem 1.25rem;
+  height: 120px;
+  background-color: #313131;
+  border-radius: 1rem;
+}
+
+.library .lib-boxes .box .box-p1 {
+  font-size: 1.15rem;
+  font-weight: 600;
+}
+
+.library .lib-boxes .box .box-p2 {
+  font-size: 0.9rem;
+  opacity: 0.8;
+  line-height: 3rem;
+  font-weight: 500;
+}
+
+.library .lib-boxes .box .badge {
+  background-color: white;
+  border: none;
+  border-radius: 100px;
+  padding: 4px 16px 4px 16px;
+  font-weight: 700;
+  font-size: 14px;
+  height: 2.25rem;
+  width: fit-content;
+}
+
+.library .lib-boxes .box-two {
+  height: 140px;
+  margin-top: 2rem;
+}
+
+/* MAIN CONTENT DESIGN CODE */
+
+.main-content {
+  background-color: #121212;
+  height: 56rem;
+  flex: 1;
+  border-radius: 1rem;
+  margin: 0.3rem;
+  overflow: auto; /* Controls the content that should be scroled */
+  padding: 0 2rem 0 2rem;
+}
+
+.main-content .sticky-nav {
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  height: 4rem;
+  background-color: #121212;
+  align-items: center;
+  z-index: 10;
+}
+
+.main-content .sticky-nav .control-buttons img {
+  margin: 10px;
+  margin-top: 15px;
+  opacity: 0.7;
+}
+
+.main-content .sticky-nav .control-buttons img:hover {
+  opacity: 1;
+}
+
+.main-content .sticky-nav .profile {
+  margin: 0.9rem;
+}
+
+.main-content .sticky-nav .profile button {
+  border: none;
+  background-color: white;
+  height: 2rem;
+  width: 140px;
+  margin-right: 10px;
+  border-radius: 100px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.main-content .sticky-nav .profile button:hover {
+  transform: scale(1.05);
+}
+
+.profile #install {
+  background-color: black;
+  color: white;
+}
+
+.profile .user-id {
+  /* margin-right: 20px; */
+  opacity: 0.7;
+  font-size: 1.25rem;
+}
+
+.main-content .sticky-nav .profile .user-id:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+@media (max-width: 1000px) {
+  .hide {
+    display: none;
+  }
+}
+
+.cards-container .card {
+  background-color: #202020;
+  border-radius: 1rem;
+  transition: ease-in-out 0.1s;
+  margin-left: 1.5rem;
+  margin-bottom: 1.5rem;
+  width: 12.5rem;
+  height: 18.75rem;
+}
+
+.cards-container .card:hover {
+  background-color: #313131;
+  /* transition: 0.3s; */
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cards-container .card .card-img {
+  width: 90%;
+  margin: 5%;
+  border-radius: 1rem;
+}
+
+.cards-container .card .card-title {
+  margin: 0.625rem;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.cards-container .card .card-info {
+  margin: 0.625rem;
+  font-size: 16px;
+  opacity: 0.7;
+}
+
+.footer {
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer .line {
+  width: 90%;
+  height: 30%;
+  border-top: 1px solid white;
+  opacity: 0.3;
+}
+
+/* MUSIC PLAYER DESIGN CODE */
+
+.music-player {
+  background-color: black;
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.music-player .player {
+  width: 40%;
+}
+
+.music-player .player .player-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.music-player .player .player-icon-img {
+  height: 1.25rem;
+  margin-left: 1.25rem;
+  margin-right: 1.25rem;
+  margin-bottom: 1rem;
+  opacity: 0.7;
+}
+
+.music-player .player .player-icon-img:hover {
+  opacity: 1;
+}
+
+.music-player .player .player-icons .play-button {
+  height: 2.5rem;
+  opacity: 1;
+  transition: ease-in-out 0.1s;
+}
+
+.music-player .player .player-icons .play-button:hover {
+  transform: scale(1.1);
+}
+
+.player .player-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.player .player-bar .progress-bar {
+  width: 80%;
+  appearance: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.music-player .album {
+  width: 30%;
+  height: 100px;
+  display: flex;
+  justify-content: left;
+  align-content: center;
+}
+
+.album .album-avatar {
+  height: 4rem;
+  margin: 1rem;
+  border-radius: 5px;
+}
+
+.album .album-info .album-title {
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  margin-top: 1.5rem;
+}
+
+.album .album-info .singer {
+  margin-top: 0.5rem;
+  margin-right: 1rem;
+  opacity: 0.7;
+  font-size: small;
+}
+
+.album .album-fav {
+  height: 2rem;
+  margin: 2rem 0.5rem;
+  opacity: 0.7;
+}
+
+.album-fav:hover {
+  opacity: 1;
+}
+
+.music-player .controls {
+  width: 30%;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+
+.controls .con-button {
+  height: 1.2rem;
+  margin: 0.25rem;
+  opacity: 0.5;
+}
+
+.controls .small {
+  height: 2.4rem;
+  opacity: 0.7;
+}
+
+.controls .con-button:hover {
+  opacity: 1;
+}
+
+.progress-bar::-webkit-slider-runnable-track {
+  background-color: #ddd;
+  border-radius: 100px;
+  height: 0.25rem;
+}
+
+.progress-bar::-webkit-slider-thumb {
+  appearance: none;
+  height: 1rem;
+  width: 1rem;
+  background-color: #1bd760;
+  border-radius: 50%;
+  margin-top: -6px;
+}
